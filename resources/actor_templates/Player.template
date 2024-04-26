@@ -1,0 +1,16 @@
+{
+	"name": "player",
+	"components": {
+		"1" : {
+			"type": "Rigidbody",
+			"trigger_radius": 0.55
+		},
+		"2": {
+			"type": "KeyboardControls"
+		},
+		"3": {
+			"type": "SpriteRenderer",
+			"sprite": "player"
+		}
+	}
+}

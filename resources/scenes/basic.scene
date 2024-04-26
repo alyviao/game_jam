@@ -1,6 +1,22 @@
 {
 	"actors": [
 		{
+			"name": "camera",
+			"components": {
+				"1": {
+					"type": "CameraManager"
+				}
+			}
+		},
+		{
+			"name": "GameManager",
+			"components": {
+				"1": {
+					"type": "GameManager"
+				}
+			}
+		},
+		{
 			"name": "debug_actor",
 			"components": {
 				"A": {

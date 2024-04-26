@@ -1,0 +1,15 @@
+{
+	"name": "Bol",
+	"components": {
+		"1" : {
+			"type": "Rigidbody",
+			"has_collider": true,
+			"has_trigger": true
+		},
+		"2": {
+			"type": "SpriteRenderer",
+			"sprite": "circle",
+			"sorting_order": 0
+		}
+	}
+}
