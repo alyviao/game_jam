@@ -1,7 +1,5 @@
 
 build
-**.resources
-**/resources
 **/frames
 user_input.txt
 recorded_user_input.txt
