@@ -1,11 +1,13 @@
 {
 	"name": "Bol",
 	"components": {
-		"1" : {
+		"1": {
 			"type": "Rigidbody",
 			"has_collider": true,
 			"collider_type": "circle",
-			"has_trigger": true
+			"has_trigger": true,
+			"radius": 0.1,
+			"trigger_radius": 0.025
 		},
 		"2": {
 			"type": "SpriteRenderer",

@@ -1,11 +1,12 @@
 {
 	"name": "player",
 	"components": {
-		"1" : {
+		"1": {
 			"type": "Rigidbody",
-			"trigger_radius": 0.55,
+			"trigger_type": "circle",
+			"trigger_radius": 0.25,
 			"gravity_scale": 20,
-			"width": 1, 
+			"width": 1,
 			"height": 0.26
 		},
 		"2": {
@@ -14,6 +15,9 @@
 		"3": {
 			"type": "SpriteRenderer",
 			"sprite": "ant"
+		},
+		"4": {
+			"type": "Grab"
 		}
 	}
 }
