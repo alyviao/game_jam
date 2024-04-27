@@ -4,6 +4,7 @@
 		"1" : {
 			"type": "Rigidbody",
 			"has_collider": true,
+			"collider_type": "circle",
 			"has_trigger": true
 		},
 		"2": {

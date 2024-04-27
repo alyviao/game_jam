@@ -4,7 +4,6 @@ KeyboardControlsP2 = {
 	OnStart = function(self)
 		self.rb = self.actor:GetComponent("Rigidbody")
 		self.current_vertical = 0
-	
 		self.lerp_factor = 0.1
 	end,
 	OnUpdate = function(self)
@@ -17,7 +16,7 @@ KeyboardControlsP2 = {
 			horizontal_input = -1 * self.speed
 		end
 		local vertical_input = 0
-		if Input.GetKeyDown("w") then
+		if Input.GetKeyDown("w") and self.current_vertical > -.2 then
 			vertical_input = -1* self.jump_power
 		end
 		self.current_vertical = self.current_vertical * (1 - self.lerp_factor) + vertical_input * self.lerp_factor
