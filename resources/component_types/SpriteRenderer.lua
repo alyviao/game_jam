@@ -5,6 +5,8 @@ SpriteRenderer = {
 	b = 255,
 	a = 255,
 	sorting_order = 0,
+	scale_x = 1, 
+	scale_y = 1,
 
 	OnStart = function(self)
 		self.pos = Vector2(0, 0)
@@ -19,7 +21,7 @@ SpriteRenderer = {
 			self.rot_degrees = self.rb:GetRotation()
 		end
 
-		Image.DrawEx(self.sprite, self.pos.x, self.pos.y, self.rot_degrees, 1, 1, 0.5, 0.5, self.r, self.g, self.b, self.a, self.sorting_order)
+		Image.DrawEx(self.sprite, self.pos.x, self.pos.y, self.rot_degrees, self.scale_x, self.scale_y, 0.5, 0.5, self.r, self.g, self.b, self.a, self.sorting_order)
 	end
 }
 
