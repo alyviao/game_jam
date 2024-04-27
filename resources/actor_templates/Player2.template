@@ -13,7 +13,7 @@
 		},
 		"3": {
 			"type": "SpriteRenderer",
-			"sprite": "ant"
+			"sprite": "ant2"
 		}
 	}
 }
