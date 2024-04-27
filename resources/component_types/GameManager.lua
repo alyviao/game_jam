@@ -4,11 +4,13 @@ GameManager = {
 	-- 0 : nothing
 	-- 1 : Static box
 	-- 2 : player
+	-- 3 : bol
+	-- 4 : player2
 
 	stage1 = {
-		{1, 0, 0, 0, 0, 4, 4, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}, -- 20x20
-		{1, 0, 0, 0, 0, 4, 4, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 0, 0, 0, 4, 4, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1}, -- 20x20
+		{1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
 		{1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
 		{1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1},
 		{1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1},
@@ -22,12 +24,11 @@ GameManager = {
 		{1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1},
 		{1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 3, 3, 1, 1, 1, 0, 0, 1},
 		{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{1, 0, 2, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1},
+		{1, 0, 2, 4, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1},
 		{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1},
 		{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
 		{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	},
-
 	OnStart = function(self)
 		local controller = 0
 
@@ -47,7 +48,6 @@ GameManager = {
 
 					local new_player = Actor.Instantiate("player")
 					local new_player_rb = new_player:GetComponent("Rigidbody")
-
 					-- CONTROLLER API
 					-- local new_player_controls = new_player:GetComponent("ControllerControls")
 					-- new_player_controls.controller_id = controller
@@ -60,6 +60,12 @@ GameManager = {
 					local new_bol_rb = new_bol:GetComponent("Rigidbody")
 					new_bol_rb.x = tile_pos.x
 					new_bol_rb.y = tile_pos.y
+				elseif tile_code == 4 then
+					Debug.Log("instantiating player 2")
+					local new_player2 = Actor.Instantiate("player2")
+					local new_player2_rb = new_player2:GetComponent("Rigidbody")
+					new_player2_rb.x = tile_pos.x
+					new_player2_rb.y = tile_pos.y
 
 				end
 			end

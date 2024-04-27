@@ -1,5 +1,5 @@
 {
-	"name": "player",
+	"name": "player2",
 	"components": {
 		"1" : {
 			"type": "Rigidbody",
@@ -7,7 +7,7 @@
 			"gravity_scale": 20
 		},
 		"2": {
-			"type": "KeyboardControls"
+			"type": "KeyboardControlsP2"
 		},
 		"3": {
 			"type": "SpriteRenderer",
