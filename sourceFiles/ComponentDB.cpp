@@ -160,6 +160,7 @@ void ComponentDB::initComponentDB() {
                 .addFunction("GetPosition", &RigidBody::GetPosition)
                 .addFunction("GetRotation", &RigidBody::GetRotation)
                 .addFunction("OnStart", &RigidBody::OnStart)
+                .addFunction("OnDestroy", &RigidBody::OnDestroy)
                 .addFunction("AddForce", &RigidBody::AddForce)
                 .addFunction("SetVelocity", &RigidBody::SetVelocity)
                 .addFunction("SetPosition", &RigidBody::SetPosition)
