@@ -2,8 +2,10 @@ CollectObject = {
 	heldObject = nil,
 	InRange = false,
 	strawberryActor = nil,
+	textObject = nil,
 
 	OnStart = function(self)
+		self.textObject = self.GetComponent("DrawScore")
 	end,
 
 	OnUpdate = function(self)
@@ -17,6 +19,7 @@ CollectObject = {
 			Debug.Log("AntHill InRange: " .. tostring(self.InRange))
 			self.strawberryActor = collision.other
 			Actor.Destroy(self.strawberryActor)
+			self.textObject.score = self.textObject.score + 1
 		end
 	end,
 
