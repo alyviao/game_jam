@@ -45,15 +45,13 @@
 				}
 			}
 		},
-
-		{
-			"name": "debug_actor",
+			{
+			"name": "audio",
 			"components": {
-				"A": {
-					"type": "ComponentA"
-				},
-				"B": {
-					"type": "ComponentB"
+				"1": {
+					"type": "PlayAudio",
+					"clip_name": "title_music",
+					"does_loop": 1
 				}
 			}
 		}
