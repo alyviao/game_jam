@@ -5,7 +5,7 @@ CollectObject = {
 	textObject = nil,
 
 	OnStart = function(self)
-		self.textObject = self.GetComponent("DrawScore")
+		self.textObject = self.actor:GetComponent("DrawScore")
 	end,
 
 	OnUpdate = function(self)

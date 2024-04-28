@@ -100,9 +100,15 @@ GameManager = {
 				elseif tile_code == 6 then 
 					center_pos = tile_pos
 				elseif tile_code == 7 then
-					Debug.Log("instantiating player 2")
+					Debug.Log("ant_hill 2")
 					local new_player2 = Actor.Instantiate("Ant_Hill")
 					local new_player2_rb = new_player2:GetComponent("Rigidbody")
+					local new_player2_text = new_player2:GetComponent("DrawScore")
+					if tile_pos.x > 6 then
+						new_player2_text.x = 1200
+					else 
+						new_player2_text.x = 100
+					end
 					new_player2_rb.x = tile_pos.x
 					new_player2_rb.y = tile_pos.y
 				elseif tile_code == 8 then
