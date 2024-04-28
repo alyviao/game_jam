@@ -13,7 +13,11 @@ DrawScore = {
 		score = 0,
 
 	OnUpdate = function(self)
-		self.str_content = "Score: " .. self.score
+		if self.str_content == "Wins!" then
+			
+		else 
+			self.str_content = "Score: " .. self.score
+		end
 		Text.Draw(self.str_content, self.x, self.y, self.font_name, self.font_size, self.r, self.g, self.b, self.a)
 	
 	end
