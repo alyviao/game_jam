@@ -6,7 +6,7 @@
 			"has_collider": true,
 			"collider_type": "circle",
 			"has_trigger": true,
-			"radius": 0.1,
+			"radius": 0.4,
 			"trigger_radius": 0.025
 		},
 		"2": {
