@@ -18,6 +18,17 @@
 					"type": "ComponentB"
 				}
 			}
+		},
+		{
+			"name": "audio",
+			"components": {
+				"1": {
+					"type": "PlayAudio",
+					"clip_name": "gameplay_music",
+					"does_loop": 1
+				}
+			}
 		}
+
 	]
 }
