@@ -5,6 +5,9 @@
 			"components": {
 				"1": {
 					"type": "GameManager"
+				},
+				"2": {
+					"type": "Generator"
 				}
 			}
 		},
