@@ -16,6 +16,9 @@
 		"3": {
 			"type": "SpriteRenderer",
 			"sprite": "ant2"
+		},
+		"4": {
+			"type": "Grab"
 		}
 	}
 }
