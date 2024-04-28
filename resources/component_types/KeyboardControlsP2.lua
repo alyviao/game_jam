@@ -1,5 +1,5 @@
 KeyboardControlsP2 = {
-	speed = 5,
+	speed = 15,
 	jump_power = 10,
 	OnStart = function(self)
 		self.rb = self.actor:GetComponent("Rigidbody")
