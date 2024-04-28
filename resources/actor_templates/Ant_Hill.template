@@ -18,6 +18,9 @@
 		},
 		"DrawScore": {
 			"type": "DrawScore"
+		},
+		"DrawUI":{
+			"type": "DrawUI"
 		}
 	}
 }

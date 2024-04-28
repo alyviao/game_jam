@@ -104,10 +104,15 @@ GameManager = {
 					local new_player2 = Actor.Instantiate("Ant_Hill")
 					local new_player2_rb = new_player2:GetComponent("Rigidbody")
 					local new_player2_text = new_player2:GetComponent("DrawScore")
+					local new_player2_sprite = new_player2:GetComponent("DrawUI")
 					if tile_pos.x > 6 then
 						new_player2_text.x = 1200
+						new_player2_sprite.sprite = "ant2"
+						new_player2_sprite.x = 1200
 					else 
 						new_player2_text.x = 100
+						new_player2_sprite.sprite = "ant"
+						new_player2_sprite.x = 100
 					end
 					new_player2_rb.x = tile_pos.x
 					new_player2_rb.y = tile_pos.y
