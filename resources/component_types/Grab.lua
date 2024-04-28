@@ -16,7 +16,7 @@ Grab = {
 			self.InRange = true
 			Debug.Log("InRange: " .. tostring(self.InRange))
 			self.strawberryActor = collision.other
-			--Actor.Destroy(collision.other)
+			-- Actor.Destroy(collision.other)
 		end
 	end,
 

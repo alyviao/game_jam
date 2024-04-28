@@ -1,5 +1,5 @@
 {
-	"name": "Tile",
+	"name": "Leaf",
 	"components": {
 		"1" : {
 			"type": "Rigidbody",
@@ -9,7 +9,7 @@
 		},
 		"2": {
 			"type": "SpriteRenderer",
-			"sprite": "stem",
+			"sprite": "leaf_right",
 			"scale_x": 0.5,
 			"scale_y": 0.25,
 			"sorting_order": -99999
