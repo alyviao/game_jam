@@ -13,13 +13,6 @@ CollectObject = {
 	OnUpdate = function(self)
 		if Input.GetKeyDown("e") and self.InRange then
 		end
-		if self.textObject.score >= 2 then
-			if self.sprite == "ant" then
-				self.textObject.str_content = "Wins!"
-			else 
-				self.textObject.str_content = "Wins!"
-			end
-		end
 	end,
 
 	OnTriggerEnter = function(self, collision)
