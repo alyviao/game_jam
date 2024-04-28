@@ -1,5 +1,5 @@
 {
-	"name": "Bol",
+	"name": "Strawberry",
 	"components": {
 		"1": {
 			"type": "Rigidbody",
@@ -11,7 +11,7 @@
 		},
 		"2": {
 			"type": "SpriteRenderer",
-			"sprite": "circle",
+			"sprite": "strawberry",
 			"sorting_order": 0
 		}
 	}

@@ -4,7 +4,7 @@ GameManager = {
 	-- 0 : nothing
 	-- 1 : Static box
 	-- 2 : player
-	-- 3 : bol
+	-- 3 : Strawberry
 	-- 4 : player2
 
 	stage1 = {
@@ -56,10 +56,10 @@ GameManager = {
 					new_player_rb.x = tile_pos.x
 					new_player_rb.y = tile_pos.y
 				elseif tile_code == 3 then
-					local new_bol = Actor.Instantiate("Bol")
-					local new_bol_rb = new_bol:GetComponent("Rigidbody")
-					new_bol_rb.x = tile_pos.x
-					new_bol_rb.y = tile_pos.y
+					local new_Strawberry = Actor.Instantiate("Strawberry")
+					local new_Strawberry_rb = new_Strawberry:GetComponent("Rigidbody")
+					new_Strawberry_rb.x = tile_pos.x
+					new_Strawberry_rb.y = tile_pos.y
 				elseif tile_code == 4 then
 					Debug.Log("instantiating player 2")
 					local new_player2 = Actor.Instantiate("player2")

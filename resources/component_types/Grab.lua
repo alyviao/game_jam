@@ -1,7 +1,7 @@
 Grab = {
 	heldObject = nil,
 	InRange = false,
-	bolActor = nil,
+	strawberryActor = nil,
 
 	OnStart = function(self)
 	end,
@@ -12,16 +12,16 @@ Grab = {
 	end,
 
 	OnTriggerEnter = function(self, collision)
-		if collision.other:GetName() == "Bol" then
+		if collision.other:GetName() == "Strawberry" then
 			self.InRange = true
 			Debug.Log("InRange: " .. tostring(self.InRange))
-			self.bolActor = collision.other
+			self.strawberryActor = collision.other
 			--Actor.Destroy(collision.other)
 		end
 	end,
 
 	OnTriggerExit = function(self, collision)
-	if collision.other:GetName() == "Bol" then
+	if collision.other:GetName() == "Strawberry" then
 		self.InRange = false
 		Debug.Log("InRange: " .. tostring(self.InRange))
 	end
