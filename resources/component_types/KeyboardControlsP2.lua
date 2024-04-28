@@ -1,6 +1,6 @@
 KeyboardControlsP2 = {
 	speed = 5,
-	jump_power = 150,
+	jump_power = 400,
 	OnStart = function(self)
 		self.rb = self.actor:GetComponent("Rigidbody")
 		self.current_vertical = 0
@@ -25,7 +25,8 @@ KeyboardControlsP2 = {
 		self.current_vertical = self.current_vertical * (1 - self.lerp_factor) + vertical_input * self.lerp_factor
 	
 		self.rb:SetRotation(0)
-		self.rb:SetVelocity(Vector2(horizontal_input, self.current_vertical))
+		self.rb:AddForce(Vector2(0, vertical_input))
+		self.rb:SetVelocity(Vector2(horizontal_input, self.rb:GetVelocity().y))
 	end
 }
 

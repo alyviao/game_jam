@@ -25,7 +25,7 @@ GameManager = {
 		{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 3, 3, 0, 0, 0, 0, 0, 1},
 		{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
 		{0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-		{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+		{0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
 		{0, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
 		{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	},
@@ -41,9 +41,9 @@ GameManager = {
 				if tile_code == 1 then 
 					local new_tile = Actor.Instantiate("Ground_Tile")
 					local new_tile_rb = new_tile:GetComponent("Rigidbody")
-					if x ~= 10 then
+					if y == 20 and x ~= 10 then
 						new_tile_rb.has_collider = false
-					else 
+					elseif y == 20 then
 						Debug.Log("setting width")
 						new_tile_rb.width = 19
 					end
