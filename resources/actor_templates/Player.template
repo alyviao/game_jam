@@ -1,13 +1,12 @@
 {
 	"name": "player",
 	"components": {
-		"1": {
+		"1": {			
 			"type": "Rigidbody",
 			"trigger_type": "circle",
-			"trigger_radius": 0.25,
-			"gravity_scale": 20,
+			"trigger_radius": 0.55,
 			"width": 1,
-			"height": 0.26
+			"height": 0.3
 		},
 		"2": {
 			"type": "KeyboardControls"
