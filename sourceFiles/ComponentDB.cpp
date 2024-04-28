@@ -147,6 +147,8 @@ void ComponentDB::initComponentDB() {
                 .addData("enabled", &RigidBody::enabled)
                 .addData("x", &RigidBody::x)
                 .addData("y", &RigidBody::y)
+                .addData("width", &RigidBody::width) // can only change these properties right after initialization and not dynamically
+                .addData("height", &RigidBody::height)
                 .addData("body_type", &RigidBody::body_type)
                 .addData("precise", &RigidBody::precise)
                 .addData("gravity_scale", &RigidBody::gravity_scale)
